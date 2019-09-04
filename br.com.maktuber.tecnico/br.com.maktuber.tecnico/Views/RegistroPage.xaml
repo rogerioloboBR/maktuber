@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:matd="clr-namespace:XF.Material.Forms.UI.Dialogs;assembly=XF.Material.Forms"
+             xmlns:matdc="clr-namespace:XF.Material.Forms.UI.Dialogs.Configurations;assembly=XF.Material.Forms"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms"
+             mc:Ignorable="d"
+             BackgroundImageSource="fundo_registro"
+             x:Class="br.com.maktuber.tecnico.Views.RegistroPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Margin="10,10,10,10">
+            <material:MaterialTextField
+                Placeholder="Nome"
+                PlaceholderColor="White"
+                TextFontFamily="{StaticResource FontFamily.RobotoRegular}"
+                HelperText="Digite seu nome completo"
+                HelperTextColor="White"
+                InputType="Text"
+                BackgroundColor="Transparent"
+                TextColor="White"/>
+            <material:MaterialTextField
+                Placeholder="CNPJ"
+                PlaceholderColor="White"
+                TextFontFamily="{StaticResource FontFamily.RobotoRegular}"
+                HelperText="Digite seu CNPJ"
+                HelperTextColor="White"
+                InputType="Numeric"
+                BackgroundColor="Transparent"
+                TextColor="White"/>
+            <material:MaterialTextField
+                Placeholder="Email"
+                PlaceholderColor="White"
+                TextFontFamily="{StaticResource FontFamily.RobotoRegular}"
+                HelperText="Digite seu email"
+                HelperTextColor="White"
+                InputType="Email"
+                BackgroundColor="Transparent"
+                TextColor="White"/>
+            <material:MaterialTextField
+                Placeholder="Senha"
+                PlaceholderColor="White"
+                TextFontFamily="{StaticResource FontFamily.RobotoRegular}"
+                HelperText="Digite sua senha"
+                HelperTextColor="White"
+                ErrorText="Senha invalida"
+                InputType="Password"
+                BackgroundColor="Transparent"
+                TextColor="White"/>
+            <material:MaterialButton
+                BackgroundColor="#EAEAEA"
+                HorizontalOptions="CenterAndExpand"
+                Text="Registrar"
+                TextColor="Black"
+                VerticalOptions="End"
+                Elevation="3, 6"
+                Clicked="NewUser_Clided"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

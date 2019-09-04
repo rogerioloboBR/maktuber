@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:matd="clr-namespace:XF.Material.Forms.UI.Dialogs;assembly=XF.Material.Forms"
+             xmlns:matdc="clr-namespace:XF.Material.Forms.UI.Dialogs.Configurations;assembly=XF.Material.Forms"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms"
+             mc:Ignorable="d"
+             BackgroundImage="fundo_login.png"
+             x:Class="br.com.maktuber.tecnico.Views.LoginPage">
+
+
+    <ContentPage.Content>
+        <StackLayout Spacing="30" Margin="10,10,10,10">
+            <material:MaterialTextField
+                Placeholder="CNPJ"
+                HelperText="Digite seu CNPJ"
+                HelperTextColor="White"
+                TextFontFamily="{StaticResource FontFamily.RobotoRegular}"
+                ErrorText="CNPJ Invalido" Text=""
+                InputType="Numeric"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                TintColor="White"
+                PlaceholderColor="White"/>
+            <material:MaterialTextField
+                Placeholder="Senha"
+                PlaceholderColor="White"
+                TextFontFamily="{StaticResource FontFamily.RobotoRegular}"
+                HelperText="Digite sua senha"
+                HelperTextColor="White"
+                ErrorText="Senha invalida"
+                InputType="Password"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                TintColor="White"/>
+            <material:MaterialButton
+                BackgroundColor="#EAEAEA"
+                HorizontalOptions="CenterAndExpand"
+                Text="Entrar"
+                TextColor="Black"
+                VerticalOptions="End"
+                Elevation="3, 6"
+                Clicked="Btn_LoginClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
